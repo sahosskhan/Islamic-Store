@@ -14,19 +14,19 @@
             </div>
 
             <div class="flex items-center justify-center  w-full mt-6 lg:mt-0 lg:w-1/2">
-                <img class="w-full  rounded-xl lg:max-w-3xl" src="https://i.ibb.co/gPm42N1/image.png" alt="pic">
+                <img class="w-full  rounded-xl lg:max-w-3xl hover:grayscale transition-all duration-500" src="https://i.ibb.co/gPm42N1/image.png" alt="pic">
             </div>
         </div>
     </div>
 
 
-    <section class="bg-white dark:bg-gray-900">
+    <section class="">
     <div class="container px-6 py-10 mx-auto">
         <h1 class="text-2xl font-semibold text-gray-800 text-center text-balance uppercase lg:text-5xl ">Explore <span class="underline decoration-amber-500">Services</span>  That We Provide</h1>
 
 
         <div class="grid grid-cols-1 gap-8 mt-16 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
-            <div class="p-8 space-y-3 border-2 border-amber-400  rounded-xl">
+            <div class="p-8 space-y-3 border-2 hover:scale-110 scale-100 transition-all duration-300 border-amber-400  rounded-xl">
                 <span class="inline-block text-amber-500 ">
                 <i class="fa-solid fa-truck-fast text-3xl"></i>
                 </span>
@@ -42,7 +42,7 @@
                 </a>
             </div>
 
-            <div class="p-8 space-y-3 border-2 border-amber-400  rounded-xl">
+            <div class="p-8 space-y-3 border-2 hover:scale-110 scale-100 transition-all duration-300 border-amber-400  rounded-xl">
                 <span class="inline-block text-amber-500 ">
                 <i class="fa-regular text-3xl fa-credit-card"></i>
                 </span>
@@ -58,7 +58,7 @@
                 </a>
             </div>
 
-            <div class="p-8 space-y-3 border-2 border-amber-400  rounded-xl">
+            <div class="p-8 space-y-3 border-2 hover:scale-110 scale-100 transition-all duration-300 border-amber-400  rounded-xl">
                 <span class="inline-block text-amber-500 ">
                 <i class="fa-solid fa-star-of-life text-3xl"></i>
                 </span>

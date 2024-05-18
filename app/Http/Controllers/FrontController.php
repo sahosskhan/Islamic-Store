@@ -18,7 +18,26 @@ class FrontController extends Controller
         $items = Product::find($id);
         return view('front.single-product',compact('items'));
     }
+    public function addToCart($id){
+        $product = Product::find($id);
+        $cart = session()->get('cart', []);
+        $cart[$id] = [
+            'product_id' => $id,
+            'name' => $product->productname,
+            'price' => $product->productprice,
+            'qty' => 1
+        ];
+       session()->put('cart', $cart);
+       return redirect()->back(); 
+    }
+    public function clearCart(){
+        session()->forget('cart');
+        return redirect()->back(); 
+    }
 
+    public function checkout(){
+        return view('front.checkout');
+    }
 
 
 

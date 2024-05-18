@@ -29,7 +29,7 @@
                 </td>
                 <td class="py-4 px-6 border-b text-xl font-medium">{{$item->productname}}</td>
                 <td class="py-4 px-6 border-b text-xl font-medium">{{$item->productcatagory}}</td>
-                <td class="py-4 px-6 border-b text-lg font-medium">{{$item->productprice}} $</td>
+                <td class="py-4 px-6 border-b text-lg font-medium"><i class="fa-solid fa-bangladeshi-taka-sign"></i> {{$item->productprice}}</td>
                 <td class="py-4 px-6 border-b text-lg font-medium">{{$item->productdescription}}</td>
                 <td class="py-4 px-6 border-b text-end">
                     <a href="{{route('product.edit',$item->id)}}">

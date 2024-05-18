@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\FrontController;
+use App\Http\Controllers\OrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,6 +31,17 @@ Route::get('/product/delete/{id}', [ProductController::class, 'destroy'])->name(
 
 Route::get('/front-products', [FrontController::class, 'index'])->name('front-product.index');
 Route::get('/single-product/{id}', [FrontController::class, 'singleProduct'])->name('single.product');
+Route::get('/add-to-cart/{id}', [FrontController::class, 'addToCart'])->name('cart.add');
+Route::get('/clear-cart', [FrontController::class, 'clearCart'])->name('clear.cart');
+Route::get('/checkout', [FrontController::class, 'checkout'])->name('checkout');
+
+
+
+Route::post('/place-order', [OrderController::class, 'placeOrder'])->name('place.order');
+Route::get('/order-list', [OrderController::class, 'index'])->name('order.list');
+Route::get('/order-detail/{id}', [OrderController::class, 'show'])->name('order.show');
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

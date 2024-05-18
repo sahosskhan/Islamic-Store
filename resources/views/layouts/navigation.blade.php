@@ -33,6 +33,7 @@
                         {{ __('My Product') }}
                     </x-nav-link>
                 </div>
+          
             </div>
 
             <!-- Settings Dropdown -->
