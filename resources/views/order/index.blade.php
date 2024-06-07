@@ -2,12 +2,12 @@
 
 @section('content')
     @if ($orders->isEmpty())
-        <p class="text-5xl text-center flex justify-center items-center gap-2 py-[365px]">
+        <p class="text-5xl text-center flex justify-center items-center gap-2 min-h-[61.8vh]">
             <i class="fa-solid fa-triangle-exclamation"></i> 
             No Order was found. Please order some product.
         </p>
     @else
-        <div class="overflow-x-auto p-8">
+        <div class="overflow-x-auto p-8 min-h-[86.8vh]">
             <h1 class="text-4xl text-center font-bold mb-6">My Order</h1>
             <table class="min-w-[44rem] container mx-auto shadow-md border border-gray-100 my-6">
                 <thead>

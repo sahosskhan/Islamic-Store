@@ -15,10 +15,10 @@
         }
     </style>
 </head>
-<body>
+<body class="bg-amber-50">
 
     <!-- Navbar -->
-    <nav class="relative bg-amber-200 shadow">
+    <nav class="relative bg-amber-200 shadow max-w-screen-2xl container mx-auto">
         <div class="container px-6 py-4 mx-auto">
             <div class="lg:flex lg:items-center lg:justify-between">
                 <div class="flex items-center justify-between">
@@ -66,12 +66,12 @@
         </div>
     </nav>
 
-    <div class="bg-amber-50">
+    <div class="bg-amber-50 max-w-screen-2xl container mx-auto">
         @yield('content')
     </div>
 
     <!-- Footer -->
-    <footer class="flex justify-center items-center p-4 bg-amber-200 text-lg">
+    <footer class="flex justify-center items-center p-4 bg-amber-200 text-lg max-w-screen-2xl container mx-auto">
         <aside>
             <p>Copyright © 2024 - All right reserved by Islamic Store Corporation</p>
         </aside>

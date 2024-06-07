@@ -76,7 +76,7 @@
         </div>
     </div>
 @else
-    <p class="text-5xl text-center flex justify-center items-center gap-2 my-[251px]"><i class="fa-solid fa-triangle-exclamation"></i> No Product was found. Please add some product.</p>
+    <p class="text-5xl text-center flex justify-center items-center gap-2 min-h-[61.8vh]"><i class="fa-solid fa-triangle-exclamation"></i> No Product was found. Please add some product.</p>
 @endif
 
 </main>
